@@ -68,7 +68,7 @@ app.post('/ratings',(req,res)=>{
 });
 */
 
-app.listen(80);
+app.listen(8080);
 
 function query(q){
 	return new Promise(function(resolve, reject){
