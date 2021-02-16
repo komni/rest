@@ -26,7 +26,7 @@ app.get('/movie/:movieId', async (req, res)=>{
 });
 
 app.get('/ratings/:userId',async (req,res)=>{
-	const q = `select movies.movieId,title,genres from movies inner join ratings on movies.movieId = ratings.movieId where userId = ${req.params.userId}`;
+	const q = `select rating, movies.movieId,title,genres from movies inner join ratings on movies.movieId = ratings.movieId where userId = ${req.params.userId}`;
 	try{
 		const results = await query(q);
 		res.json(results);
