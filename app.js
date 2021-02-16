@@ -36,7 +36,7 @@ app.get('/ratings/:userId',async (req,res)=>{
 		res.send(err);
 	}
 });
-
+/*
 // post movies with certain keyword
 app.post('/movie',(req,res)=>{
 	const keyword = req.body;
@@ -66,6 +66,7 @@ app.post('/ratings',(req,res)=>{
 	}
 	res.json(req.body);
 });
+*/
 
 app.listen(8080);
 
